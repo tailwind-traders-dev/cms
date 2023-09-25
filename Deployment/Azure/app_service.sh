@@ -22,7 +22,7 @@ LOGSCRIPT="./Deployment/Azure/logs.sh"
 #PC4 (Premium Container Large).
 
 #accepted values: B1, B2, B3, D1, F1, FREE, P1, P1V2, P2, P2V2, P3, P3V2, PC2, PC3, PC4, S1, S2, S3, SHARED
-SKU=B1
+SKU=F1 #use B1 if you get an error due to already having a free linux app service
 
 rm $ENVFILE
 rm $ZIPSCRIPT

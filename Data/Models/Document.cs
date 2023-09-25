@@ -2,7 +2,7 @@
 using YamlDotNet.Serialization;
 namespace Tailwind.CMS.Data.Models
 {
-  public class Document
+  public partial class Document
   {
     public Document()
     {
