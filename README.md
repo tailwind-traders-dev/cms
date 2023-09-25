@@ -35,6 +35,17 @@ const docs = await res.json();
 
 The result will be an array containing all of the document data that you just pop into place.
 
+## Working With Content
+
+Obviously, this isn't a full-scale CMS, but it will serve well enough to achieve the following goals:
+
+ - Your content won't be hard-coded into your application (HTML, components, etc). This is immediate technical debt, especially when you have to deploy your client application due to spelling mistakes!
+ - You can version your content using Git.
+ - You can wrap content changes in a reasonable workflow and ensure that your application is redeployed with the content changes.
+
+The latter option would require GitHub Actions deployment - which is out of scope for this README but it's something you can easily do when you're ready.
+
+
 ## The Document
 
 The data returned is represented by a `Document` model, which is a very basic representation of typical CMS content:

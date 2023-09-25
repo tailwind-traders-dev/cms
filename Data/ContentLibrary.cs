@@ -26,6 +26,7 @@ public class ContentLibrary
       }
       return this.Documents.Where(d => d.Summary.ToLower().Contains(term.ToLower()));
     }
+
     //Reads the documents on disk, parses and loads the IList<Document>
     public ContentLibrary Load(){
       var result = new List<Document>();
